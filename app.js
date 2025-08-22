@@ -102,3 +102,18 @@ function actualizarBotonSorteo() {
         botonSorteo.style.opacity = "0.6";
     }
 }
+document.addEventListener('DOMContentLoaded', function() {
+    let input = document.getElementById("amigo");
+    
+    input.focus();
+    
+    // Permitir agregar amigo presionando Enter
+    input.addEventListener('keypress', function(event) {
+        if (event.key === 'Enter') {
+            agregarAmigo();
+        }
+    });
+    
+    // Inicializar estado del botón
+    actualizarBotonSorteo();
+});
