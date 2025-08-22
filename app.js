@@ -44,3 +44,20 @@ function agregarAmigo() {
     // Habilitar botón de sorteo si hay al menos 2 amigos
     actualizarBotonSorteo();
 }
+// FUNCIÓN PARA MOSTRAR LA LISTA 
+function mostrarAmigos() {
+    let lista = document.getElementById("listaAmigos");
+    
+    // Limpiar la lista existente
+    lista.innerHTML = "";
+    
+    // Iterar sobre el arreglo usando bucle for 
+    for (let i = 0; i < amigos.length; i++) {
+        // Crear elementos de lista para cada amigo 
+        let li = document.createElement("li");
+        li.textContent = amigos[i];
+        
+        // Agregar elementos a la lista
+        lista.appendChild(li);
+    }
+}
