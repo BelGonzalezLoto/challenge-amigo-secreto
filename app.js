@@ -117,3 +117,16 @@ document.addEventListener('DOMContentLoaded', function() {
     // Inicializar estado del botón
     actualizarBotonSorteo();
 });
+//Limpiar toda la lista (por si quieren empezar de nuevo) 
+function limpiarLista() {
+    if (amigos.length > 0 && confirm("¿Estás seguro de que quieres limpiar toda la lista?")) {
+        amigos = [];
+        mostrarAmigos();
+        actualizarBotonSorteo();
+        
+        // Limpiar resultado también
+        document.getElementById("resultado").innerHTML = "";
+        
+        document.getElementById("amigo").focus();
+    }
+}
