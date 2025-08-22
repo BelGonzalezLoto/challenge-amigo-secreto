@@ -32,6 +32,17 @@ Aplicación web para realizar sorteos de amigo secreto de forma fácil y diverti
 - Animaciones suaves en las interacciones
 - Validación visual del estado de los botones
 
+## 📷 Capturas de pantalla
+
+### Pantalla inicial
+![Pantalla inicial](images/pantalla-inicial.png)
+
+### Agregando participantes
+![Agregando nombres](images/agregando-nombres.png)
+
+### Resultado del sorteo
+![Resultado del sorteo](images/resultado-sorteo.png)
+
 ---
 
 Desarrollado como parte del Challenge de Alura Latam 🚀
