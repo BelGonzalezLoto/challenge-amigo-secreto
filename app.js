@@ -90,3 +90,15 @@ function sortearAmigo() {
     li.textContent = "Tu amigo secreto es: " + amigoSorteado;
     resultado.appendChild(li);
 }
+// Función para actualizar estado del botón de sorteo
+function actualizarBotonSorteo() {
+    let botonSorteo = document.querySelector(".button-draw");
+    
+    if (amigos.length >= 2) {
+        botonSorteo.disabled = false;
+        botonSorteo.style.opacity = "1";
+    } else {
+        botonSorteo.disabled = true;
+        botonSorteo.style.opacity = "0.6";
+    }
+}
